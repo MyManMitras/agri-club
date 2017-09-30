@@ -1,0 +1,22 @@
+.header {
+    top: 0;
+    z-index: 9999;
+    background: white;
+    width: 100%;
+}
+
+.logo {
+    width: 100px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.corp-name {
+    display: inline-grid;
+    margin: 0 5px 0 5px;
+}
+
+.small-line {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
