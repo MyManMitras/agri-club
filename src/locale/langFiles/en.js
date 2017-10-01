@@ -1,11 +1,13 @@
 let englishContent = {
     hi: 'Hello, Agri Club',
+    name: 'Agri Club',
+    place: 'Mandya',
     home: 'Home',
-    member: 'Members',
+    members: 'Members',
     history: 'History',
     programs: 'Programs', 
     commingEvents: 'Upcoming Events',
-    gallery: 'Gallary',
+    gallery: 'Gallery',
     contactUs : 'Contact Us'
 
 };

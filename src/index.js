@@ -5,6 +5,8 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min';
+import 'material-icons/css/material-icons.min.css';
+import './utils/device-detect';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
