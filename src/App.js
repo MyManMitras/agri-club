@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <div className="app">
         <Header screens={screens} selectedScreen={_.head(screens)} />
-        <Section />
+        <Section selectedScreen={_.head(screens)}/>
         <Footer />
       </div>
     );

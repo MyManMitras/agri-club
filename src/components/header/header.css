@@ -4,6 +4,7 @@
     background: white;
     width: 100%;
     height: 10%;
+    position: fixed;
 }
 .header.desktop .header-content{
     margin-left: 200px;
