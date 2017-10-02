@@ -11,11 +11,11 @@ class Header extends Component {
             <ul className="nav nav-pills">
                 {this.props.screens.map(function (screen, index) {
                     if (screen === self.props.selectedScreen) {
-                        return (<li className="nav-item active" key={index}><a className="nav-link" href="#sec1">
+                        return (<li className="nav-item active" key={index}><a className="nav-link" href={'#'+screen}>
                             {content[screen]}
                         </a></li>);
                     } else {
-                        return (<li className="nav-item"  key={index}><a className="nav-link" href="#sec1">
+                        return (<li className="nav-item"  key={index}><a className="nav-link" href={'#'+screen}>
                             {content[screen]}
                         </a></li>);
                     }

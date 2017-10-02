@@ -26,10 +26,13 @@ class Section extends Component {
     render() {
         return (
             <div className="section">
-                <div className="row">
+                <div className="row" id={this.props.selectedScreen}>
                     {this.getLeftSpacing()}
                     <div className="col-8 col-sm-12 col-md-8 col-lg-8 actual-content">
                         <h1>{content[this.props.selectedScreen]}</h1>
+                        <p>{content.homeContent1}</p>
+                        <p>{content.homeContent2}</p>
+                        <p>{content.homeContent3}</p>
                     </div>
                     {this.getRightSpacing()}
                 </div>

@@ -3,29 +3,6 @@ import './footer.css';
 import content from '../../locale/locale';
 import commons from '../../utils/commons';
 
-const notifications = [
-    {
-        title: 'A Sample Event Name 1',
-        date: '14th Jan 2017',
-        highlight: 'CM addresed the gathering'
-    },{
-        title: 'A Sample Event Name 2',
-        date: '01st Feb 2017',
-        highlight: 'CM addresed the gathering'
-    },{
-        title: 'A Sample Event Name 3',
-        date: '25th Feb 2017',
-        highlight: 'CM addresed the gathering'
-    },{
-        title: 'A Sample Event Name 4',
-        date: '20th Mar 2017',
-        highlight: 'CM addresed the gathering'
-    },{
-        title: 'A Sample Event Name 5',
-        date: '14th Apr 2017',
-        highlight: 'CM addresed the gathering'
-    }
-];
 class Footer extends Component {
     getNotifications() {
         var nots = [];
@@ -33,9 +10,9 @@ class Footer extends Component {
         for(var index = 0; index < (window.isMobile ? 1 : 3) ; index++) {
             nots.push(
                 <div className="col-12 col-sm-12 col-md-6 col-lg-4 event" key={index}>
-                     <span><strong>{notifications[index].title}</strong></span><br/>
-                     <span>Date: {notifications[index].date}</span><br/>
-                     <span>{notifications[index].highlight}</span>
+                     <span><strong>{content.notifications[index].title}</strong></span><br/>
+                     <span>{content.date}: {content.notifications[index].date}</span><br/>
+                     <span>{content.notifications[index].highlight}</span>
                 </div>
             );
         }

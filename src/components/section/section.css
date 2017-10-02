@@ -1,6 +1,8 @@
 .section {
     position: relative;
     overflow-y: scroll;
+    height: 80%;
+    max-height: 80%;
 }
 
 .section .row {
@@ -10,12 +12,12 @@
 
 .left-content-space{
     min-height: 850px !important;
-    opacity: 0.25;
+    opacity: 0.5;
     border-right: 1px solid green;
 }
 
 .right-content-space{
     min-height: 850px !important;
-    opacity: 0.25;
+    opacity: 0.5;
     border-left: 1px solid green;
 }
