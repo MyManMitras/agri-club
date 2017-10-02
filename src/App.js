@@ -11,7 +11,7 @@ const screens = [
 ];
 class App extends Component {
   render() {
-    content.setLanguage('en');
+    content.setLanguage('ka');
     return (
       <div className="app">
         <Header screens={screens} selectedScreen={_.head(screens)} />
