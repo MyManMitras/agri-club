@@ -9,4 +9,9 @@ import 'material-icons/css/material-icons.min.css';
 import './utils/device-detect';
 
 ReactDOM.render(<App />, document.getElementById('root'));
+if(!window.isMobile){
+    window.addEventListener('resize', function() {
+        window.location.reload();
+    });
+}
 registerServiceWorker();

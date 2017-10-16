@@ -7,14 +7,12 @@
     position: sticky;
 }
 .header.desktop .header-content{
-    margin-left: 18rem;
-    margin-right: 18rem;
-    margin-top: 10px;
+    margin-left: 12rem;
+    margin-right: 12rem;
 }
 .header.mobile .header-content{
     margin-left: 5px;
     margin-right: 5px;
-    margin-top: 5px;
 }
 
 .logo {
@@ -41,11 +39,15 @@
     color: green;
     font-size: large;
 }
+.agri-navs ul li a:hover{
+    background-color: #bedebe;
+}
 
-.agri-navs ul li.active a{
-    background-color: green;
+.agri-navs ul li.active a, .agri-navs ul li.active a:hover{
+    background-color: green !important;
     color: white;
 }
+
 .mobile-menu {
     color: green;
 }

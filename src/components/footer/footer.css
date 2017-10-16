@@ -39,3 +39,16 @@
 .right-event {
     right: 0;
 }
+
+.lang-switch {
+    position: absolute;
+    color: green;
+    font-weight: bold;
+    right: 0;
+    margin-top: -21px;
+    background: white;
+    display: inline-block;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    border-radius: 5px 0 0 5px;
+}

@@ -21,3 +21,22 @@
     opacity: 0.5;
     border-left: 1px solid green;
 }
+
+.mobile-menu-list {
+    position: fixed;
+    right: 0;
+    background: white;
+    z-index: 99;
+}
+.mobile-menu-list p {
+    padding: 5px 20px;
+    border-bottom: 1px solid green;
+    border-left: 1px solid green;
+    margin: 0;
+    text-align: end;
+    font-size: x-large;
+}
+.mobile-menu-list p.active {
+    color: white;
+    background: green;
+}

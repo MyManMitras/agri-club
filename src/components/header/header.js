@@ -11,11 +11,14 @@ class Header extends Component {
             <ul className="nav nav-pills">
                 {this.props.screens.map(function (screen, index) {
                     if (screen === self.props.selectedScreen) {
-                        return (<li className="nav-item active" key={index}><a className="nav-link" href={'#'+screen}>
-                            {content[screen]}
+                        return (<li className="nav-item active" key={index} 
+                                onClick={self.changeScreen.bind(self,screen)}><a className="nav-link" href={'#'+screen}>
+                                {content[screen]}
                         </a></li>);
                     } else {
-                        return (<li className="nav-item"  key={index}><a className="nav-link" href={'#'+screen}>
+                        return (<li className="nav-item"  key={index} 
+                            onClick={self.changeScreen.bind(self,screen)}>
+                            <a className="nav-link" href={'#'+screen}>
                             {content[screen]}
                         </a></li>);
                     }
@@ -27,7 +30,7 @@ class Header extends Component {
         return (
             <span className="mobile-menu">
                 <span className="screen-name">{content[this.props.selectedScreen]}</span>
-                <span className="mi mi-menu icon "></span>
+                <span className="mi mi-menu icon " onClick={this.props.toogleMobileHeader}></span>
             </span>);
     };
     getNavigation() {
@@ -37,11 +40,21 @@ class Header extends Component {
             return this.getNavBar();
         }
     };
+    changeScreen(screen) {
+        this.props.changeScreen(screen);
+    }
+    getLogForNoMobileDevices() {
+        if(!window.isMobile) {
+            return (<img src={logo} className="logo" />);
+        } else {
+            return null;
+        }
+    }
     render() {
         return (
             <div className={commons.getMobileClassName('header')} >
                 <div className="header-content">
-                    <img src={logo} className="logo" />
+                    {this.getLogForNoMobileDevices()}
                     <div className="corp-name">
                         <big style={{ fontSize: 'xx-large' }}> {content.name}</big>
                         <span style={{ lineHeight: 'initial' }}>{content.place}</span>
