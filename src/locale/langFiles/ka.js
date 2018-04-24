@@ -7,7 +7,7 @@ let kannadaContent = {
     members: 'ಸದಸ್ಯರು',
     history: 'ಇತಿಹಾಸ',
     programs: 'ಕಾರ್ಯಕ್ರಮಗಳು', 
-    commingEvents: 'ಮುಂದಿನ ಕಾರ್ಯಕ್ರಮ',
+    upcomingEvents: 'ಮುಂದಿನ ಕಾರ್ಯಕ್ರಮ',
     gallery: 'ಗ್ಯಾಲರಿ',
     contactUs: 'ಸಂಪರ್ಕ',
     switchLang: 'Switch to English',

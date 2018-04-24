@@ -25,9 +25,19 @@ class App extends Component {
 //	window.localStorage.setItem('lang', content.getLanguage());
 //    this.forceUpdate();
   }
+  handleScroll() {
+  }
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount(){
+    window.removeEventListener('scroll', this.handleScroll);
+  }
 
   componentWillMount() {
-	  var lang = window.localStorage.getItem('lang');
+    var lang = window.localStorage.getItem('lang');
+    lang = 'en';
 	  if(!lang) {
 		lang = 'en';
 		window.localStorage.setItem('lang', lang);
