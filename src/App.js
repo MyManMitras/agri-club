@@ -16,14 +16,14 @@ class App extends Component {
 	selectedScreen: _.head(screens)
   };
   changeLanguage() {
-    if(content.getLanguage() === 'en'){
-      content.setLanguage('ka');
-    }
-    else {
+//    if(content.getLanguage() === 'en'){
+//      content.setLanguage('ka');
+//    }
+//    else {
       content.setLanguage('en');
-    }
-	window.localStorage.setItem('lang', content.getLanguage());
-    this.forceUpdate();
+//    }
+//	window.localStorage.setItem('lang', content.getLanguage());
+//    this.forceUpdate();
   }
 
   componentWillMount() {
