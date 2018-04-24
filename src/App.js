@@ -16,11 +16,11 @@ class App extends Component {
 	selectedScreen: _.head(screens)
   };
   changeLanguage() {
-    if(content.getLanguage() === 'ka'){
-      content.setLanguage('en');
+    if(content.getLanguage() === 'en'){
+      content.setLanguage('ka');
     }
     else {
-      content.setLanguage('ka');
+      content.setLanguage('en');
     }
 	window.localStorage.setItem('lang', content.getLanguage());
     this.forceUpdate();
