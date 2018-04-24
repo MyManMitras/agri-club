@@ -29,7 +29,7 @@ class App extends Component {
   componentWillMount() {
 	  var lang = window.localStorage.getItem('lang');
 	  if(!lang) {
-		lang = 'ka';
+		lang = 'en';
 		window.localStorage.setItem('lang', lang);
 	  }
     content.setLanguage(lang);
