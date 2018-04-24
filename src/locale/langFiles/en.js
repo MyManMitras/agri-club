@@ -7,13 +7,45 @@ let englishContent = {
     members: 'Members',
     history: 'History',
     programs: 'Programs', 
-    commingEvents: 'Upcoming Events',
+    upcomingEvents: 'Upcoming Events',
     gallery: 'Gallery',
     contactUs : 'Contact Us',
-    switchLang: 'Switch to English',
-    homeContent1: 'A club is an association of two or more people united by a common interest or goal. A service club, for example, exists for voluntary or charitable activities; there are clubs devoted to hobbies and sports, social activities clubs, political and religious clubs, and so forth.',
-    homeContent2: 'Historically, clubs occurred in all ancient states of which we have detailed knowledge. Once people started living together in larger groups, there was need for people with a common interest to be able to associate despite having no ties of kinship. Organizations of the sort have existed for many years, as evidenced by Ancient Greek clubs and associations (collegia) in Ancient Rome.',
-    homeContent3: 'It is uncertain whether the use of the word "club" originated in its meaning of a knot of people, or from the fact that the members “clubbed” together to pay the expenses of their gatherings. The oldest English clubs were merely informal periodic gatherings of friends for the purpose of dining or drinking with one another. Thomas Occleve (in the time of Henry IV) mentions such a club called La Court de Bonne Compagnie (the Court of Good Company), of which he was a member. In 1659 John Aubrey wrote, “We now use the word clubbe for a sodality [a society, association, or fraternity of any kind] in a tavern.”',
+    switchLang: 'ಕನ್ನಡಗೆ ಬದಲಾಯಿಸು',
+    screens: {
+        home: {
+            name: 'Home',
+            text: {
+                p1: 'Mandya District is very well known to be a predominantly agriculture oriented district in Karnataka State. Government owned major industrial unit - The Mysore Sugar Company - an agriculture based unit - was the one and only Industry in the District.  Later, another industry - The Mysore Acetate and Chemicals Company was set up by the Government which also utilized the Acetic Acid manufactured by the MSCo. Ltd. To manufacture Cellulose Triacetate.  It is natural that there were a number of businessmen involved in dealing with the major agricultural input - Chemical Fertilizers.  Their business was also seasonal and had to spend their idle days with some other activity.  It was then that a sizable group of the citizens of Mandya City, who experienced the lack of a relaxing atmosphere, away from the ever haunting struggle for livelihood, be it their business, their office or house, where they can lay back and enjoy their life by indulging in various indoor games like Table Tennis, Billiards, Snooker, Shuttle Badminton, Table games like Carom, Chess, Card games, etc., joined their hands and zeal to establish this AGRI CLUB (R), Mandya, in the year 1986-87.  These games are arranged in separate rooms so that any one of them is disturbed while playing their game of choice.  Led by Sri B. Muralidhara, these enthusiasts got the Club registered with the authorities on 12-11-1986 and were allotted the Registration No. 90/1986-87.',
+                p2: 'Initially this group could muster the support, involvement  and participation of about 100 likeminded people and has now swollen to about 250.  Likewise, the Club was run in a rented building for many years.  During the tenure of Sri C.  Devaraju as President, the club with an intention to carry out its activities and acquire a own building, a site was purchased on the Bangalore-Mysore Highway on 03-11-2004 and subsequently a lavish, well equipped building of its own, comprising of a Party Hall, Cards Hall, Gym Section, a well equipped Canteen Section, Two suites, Two A/c Rooms, Two Rooms, a well landscaped Roopa Garden, was constructed.',
+                p3: 'The building in which the Club is presently housed was inaugurated on 20-10-2013. Sri C. Srikanthu was the President of the Club at that juncture. The elegance of the Club Building, the deceptive facilities built-up in the club, the ambiance of the location, are bound to attract many more people to join it.',
+                p4: 'Presently, the members of the Club have elected Sri B. Siddaraju as its President for the years 2017-18.  Sri Siddaraju, is the former President of the City Municipal Council, Mandya.'
+            }
+        },
+        history: {
+            name: 'History'
+        },
+        programs: {
+            name: 'Programs'
+        },
+        members: {
+            name: 'Members'
+        },
+        upcomingEvents: {
+            name: 'Upcoming Events'
+        },
+        gallery: {
+            name: 'Gallery',
+            text: {
+                p1: 'Mandya District is very well known to be a predominantly agriculture oriented district in Karnataka State. Government owned major industrial unit - The Mysore Sugar Company - an agriculture based unit - was the one and only Industry in the District.  Later, another industry - The Mysore Acetate and Chemicals Company was set up by the Government which also utilized the Acetic Acid manufactured by the MSCo. Ltd. To manufacture Cellulose Triacetate.  It is natural that there were a number of businessmen involved in dealing with the major agricultural input - Chemical Fertilizers.  Their business was also seasonal and had to spend their idle days with some other activity.  It was then that a sizable group of the citizens of Mandya City, who experienced the lack of a relaxing atmosphere, away from the ever haunting struggle for livelihood, be it their business, their office or house, where they can lay back and enjoy their life by indulging in various indoor games like Table Tennis, Billiards, Snooker, Shuttle Badminton, Table games like Carom, Chess, Card games, etc., joined their hands and zeal to establish this AGRI CLUB (R), Mandya, in the year 1986-87.  These games are arranged in separate rooms so that any one of them is disturbed while playing their game of choice.  Led by Sri B. Muralidhara, these enthusiasts got the Club registered with the authorities on 12-11-1986 and were allotted the Registration No. 90/1986-87.',
+                p2: 'Initially this group could muster the support, involvement  and participation of about 100 likeminded people and has now swollen to about 250.  Likewise, the Club was run in a rented building for many years.  During the tenure of Sri C.  Devaraju as President, the club with an intention to carry out its activities and acquire a own building, a site was purchased on the Bangalore-Mysore Highway on 03-11-2004 and subsequently a lavish, well equipped building of its own, comprising of a Party Hall, Cards Hall, Gym Section, a well equipped Canteen Section, Two suites, Two A/c Rooms, Two Rooms, a well landscaped Roopa Garden, was constructed.',
+                p3: 'The building in which the Club is presently housed was inaugurated on 20-10-2013. Sri C. Srikanthu was the President of the Club at that juncture. The elegance of the Club Building, the deceptive facilities built-up in the club, the ambiance of the location, are bound to attract many more people to join it.',
+                p4: 'Presently, the members of the Club have elected Sri B. Siddaraju as its President for the years 2017-18.  Sri Siddaraju, is the former President of the City Municipal Council, Mandya.'
+            }
+        },
+        contactUs: {
+            name: 'Contact Us'
+        },
+    },
     notifications: [
         {
             title: 'A Sample Event Name 1',

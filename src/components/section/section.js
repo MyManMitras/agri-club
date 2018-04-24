@@ -3,24 +3,24 @@ import ReactDOM from 'react-dom';
 import './section.css';
 import content from '../../locale/locale';
 import commons from '../../utils/commons';
-import img1 from '../../assets/bacs1.jpg';
-import img2 from '../../assets/bacs2.jpeg';
-import img3 from '../../assets/bacs7.jpg';
+import Home from './home/home.js';
+import History from './history/history.js';
+import Programs from './programs/programs.js';
+import ContactUs from './contactUs/contactUs.js';
+import Members from './members/members.js';
+import UpcomingEvents from './upcomingEvents/upcomingEvents.js';
+import Gallery from './gallery/gallery.js';
 
 class Section extends Component {
     getLeftSpacing() {
         if(!window.isMobile){
-            return (<div className="col-2 col-md-2 col-lg-2 left-content-space" 
-                style={{background: 'url('+img1+')'}}>
-            </div>);
+            return (<div className="col-2 col-md-2 col-lg-2 left-content-space"></div>);
         }
         return null; 
     }
     getRightSpacing() {
         if(!window.isMobile){
-            return (<div className="col-2 col-md-2 col-lg-2 right-content-space" 
-                style={{background: 'url('+img3+')'}}>
-            </div>);
+            return (<div className="col-2 col-md-2 col-lg-2 right-content-space"></div>);
         }
         return null; 
     }
@@ -59,19 +59,17 @@ class Section extends Component {
 
     getAllContents(){
         var self = this;
-        return this.props.screens.map(function(screen, index){
-            return (
-                <div className="row" ref={screen} key={index}>
-                    {self.getLeftSpacing()}
-                    <div className="col-8 col-sm-12 col-md-8 col-lg-8 actual-content">
-                        <h1>{content[screen]}</h1>
-                        <p>{content.homeContent1}</p>
-                        <p>{content.homeContent2}</p>
-                        <p>{content.homeContent3}</p>
-                    </div>
-                    {self.getRightSpacing()}
-                </div>);
-        });
+        return (
+            <div>
+                <div className="row" ref="home"> {self.getLeftSpacing()} <Home/> {self.getRightSpacing()} </div>
+                <div className="row" ref="history"> {self.getLeftSpacing()} <History/> {self.getRightSpacing()} </div>
+                <div className="row" ref="programs"> {self.getLeftSpacing()} <Programs/> {self.getRightSpacing()} </div>
+                <div className="row" ref="upcomingEvents"> {self.getLeftSpacing()} <UpcomingEvents/> {self.getRightSpacing()} </div>
+                <div className="row" ref="members"> {self.getLeftSpacing()} <Members/> {self.getRightSpacing()} </div>
+                <div className="row" ref="gallery"> {self.getLeftSpacing()} <Gallery/> {self.getRightSpacing()} </div>
+                <div className="row" ref="contactUs"> {self.getLeftSpacing()} <ContactUs/> {self.getRightSpacing()} </div>
+            </div>
+        );
     }
     componentWillReceiveProps(nextProps){
         if(this.props.selectedScreen !== nextProps.selectedScreen) {

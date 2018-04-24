@@ -69,7 +69,6 @@ class Footer extends Component {
     render() {
         return (
             <div className={commons.getMobileClassName('footer row')}>
-                <span className="lang-switch hand-pointer" onClick={this.props.changeLanguage}>{content.switchLang}</span>
                 <span className="mi mi-navigate-before left-event not-nav-icon"></span>
                 {this.state.notifications}
                 <span className="mi mi-navigate-next right-event not-nav-icon"></span>
