@@ -10,7 +10,7 @@ class Home extends Component {
         return (
             <div className="col-8 col-sm-12 col-md-8 col-lg-8 actual-content">
                 <h1>{content['home']}</h1>
-                <img src={main} alt="The club front" height='250px' className="front-image"></img>
+                <img src={main} alt="The club front" height='350px' className="front-image"></img>
                 <br/><br/>
                 <p>{content.screens.home.text.p1}</p>
                 <p>{content.screens.home.text.p2}</p>

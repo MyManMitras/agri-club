@@ -7,7 +7,7 @@ import Section from './components/section/section';
 import _ from 'lodash';
 
 const screens = [
-  'home', 'history', 'programs', 'upcomingEvents', 'members', 'gallery', 'contactUs'
+  'home', 'officeBearers', 'programs', 'upcomingEvents', 'facilities', 'gallery', 'contactUs'
 ];
 class App extends Component {
 

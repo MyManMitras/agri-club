@@ -4,8 +4,10 @@ let englishContent = {
     date: 'Date',
     place: 'Mandya',
     home: 'Home',
+    facilities: 'Facilities',
     members: 'Members',
     history: 'History',
+    officeBearers: 'Office Bearers',
     programs: 'Programs', 
     upcomingEvents: 'Upcoming Events',
     gallery: 'Gallery',
@@ -21,14 +23,34 @@ let englishContent = {
                 p4: 'Presently, the members of the Club have elected Sri B. Siddaraju as its President for the years 2017-18.  Sri Siddaraju, is the former President of the City Municipal Council, Mandya.'
             }
         },
-        history: {
-            name: 'History'
+        officeBearers: {
+            name: 'Office Bearers',
+            list: [
+                {name: 'Siddaraju B', title: 'President'},
+                {name: 'Yogesh H M', title: 'Vice-President'},
+                {name: 'Krishna M C', title: 'secretary'},
+                {name: 'Ramesh M N', title: 'Treasurer'},
+                {name: 'Umesh Kumar K', title: 'Director'},
+                {name: 'Krishna M', title: 'Director'},
+                {name: 'Gurubasappa', title: 'Director'},
+                {name: 'Mahesh M R', title: 'Director'},
+                {name: 'Mahalinghaiah M C', title: 'Director'},
+                {name: 'Rakesh S', title: 'Director'},
+                {name: 'Sathish H S', title: 'Director'},
+                {name: 'Sudheer S', title: 'Director'}
+            ]
         },
         programs: {
             name: 'Programs'
         },
-        members: {
-            name: 'Members'
+        facilities: {
+            name: 'Facilities',
+            list: [
+                {name: 'Gym', text: 'Some content about the facility'},
+                {name: 'Rooms', text: 'Some content about the facility'},
+                {name: 'Cards', text: 'Some content about the facility'},
+                {name: 'Part Hall', text: 'Some content about the facility'},
+            ]
         },
         upcomingEvents: {
             name: 'Upcoming Events'

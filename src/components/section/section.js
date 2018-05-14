@@ -10,6 +10,8 @@ import ContactUs from './contactUs/contactUs.js';
 import Members from './members/members.js';
 import UpcomingEvents from './upcomingEvents/upcomingEvents.js';
 import Gallery from './gallery/gallery.js';
+import Facilities from './facilities/facilities';
+import OfficeBearers from './officeBearers/officeBearers';
 
 class Section extends Component {
     getLeftSpacing() {
@@ -62,10 +64,10 @@ class Section extends Component {
         return (
             <div>
                 <div className="row" ref="home"> {self.getLeftSpacing()} <Home/> {self.getRightSpacing()} </div>
-                <div className="row" ref="history"> {self.getLeftSpacing()} <History/> {self.getRightSpacing()} </div>
+                <div className="row" ref="officeBearers"> {self.getLeftSpacing()} <OfficeBearers/> {self.getRightSpacing()} </div>
                 <div className="row" ref="programs"> {self.getLeftSpacing()} <Programs/> {self.getRightSpacing()} </div>
                 <div className="row" ref="upcomingEvents"> {self.getLeftSpacing()} <UpcomingEvents/> {self.getRightSpacing()} </div>
-                <div className="row" ref="members"> {self.getLeftSpacing()} <Members/> {self.getRightSpacing()} </div>
+                <div className="row" ref="facilities"> {self.getLeftSpacing()} <Facilities/> {self.getRightSpacing()} </div>
                 <div className="row" ref="gallery"> {self.getLeftSpacing()} <Gallery/> {self.getRightSpacing()} </div>
                 <div className="row" ref="contactUs"> {self.getLeftSpacing()} <ContactUs/> {self.getRightSpacing()} </div>
             </div>

@@ -5,24 +5,45 @@ import logo from '../../assets/logoK.png';
 import commons from '../../utils/commons';
 
 class Header extends Component {
+
+    getVisibleNavs(self, screen, index) {
+        if (screen === self.props.selectedScreen) {
+            return (<li className="nav-item active" key={index} 
+                    onClick={self.changeScreen.bind(self,screen)}><a className="nav-link" href={'#'+screen}>
+                    {content[screen]}
+            </a></li>);
+        } else {
+            return (<li className="nav-item"  key={index} 
+                onClick={self.changeScreen.bind(self,screen)}>
+                <a className="nav-link" href={'#'+screen}>
+                {content[screen]}
+            </a></li>);
+        }
+    }
     getNavBar() {
         var self = this;
         return (
             <ul className="nav nav-pills">
                 {this.props.screens.map(function (screen, index) {
-                    if (screen === self.props.selectedScreen) {
-                        return (<li className="nav-item active" key={index} 
-                                onClick={self.changeScreen.bind(self,screen)}><a className="nav-link" href={'#'+screen}>
-                                {content[screen]}
-                        </a></li>);
-                    } else {
-                        return (<li className="nav-item"  key={index} 
-                            onClick={self.changeScreen.bind(self,screen)}>
-                            <a className="nav-link" href={'#'+screen}>
-                            {content[screen]}
-                        </a></li>);
+                    if(index < 5) {
+                        return self.getVisibleNavs(self, screen, index);
                     }
                 })}
+
+                <li role="presentation" className="dropdown">
+                <a className="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Other <span className="caret"></span>
+                </a>
+                    <ul className="dropdown-menu">
+                        {this.props.screens.map(function(screen, index){
+                            if(index >= 5) {
+                                return (<li key={index} onClick={self.changeScreen.bind(self,screen)}>
+                                    <a href={'#'+screen}>{content[screen]}</a>
+                                </li>);
+                            }
+                        })}
+                    </ul>
+                </li>
             </ul>
         );
     }
