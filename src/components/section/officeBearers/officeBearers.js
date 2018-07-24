@@ -4,7 +4,7 @@ import content from '../../../locale/locale';
 import commons from '../../../utils/commons';
 import main from '../../../assets/main2.JPG';
 import './officeBearers.css';
-import blankPhoto from '../../../assets/blankPhoto.jpg';
+import memberPhotos from '../photos/photos';
 
 class OfficeBearers extends Component {
     render() {
@@ -16,7 +16,7 @@ class OfficeBearers extends Component {
                         content['screens']['officeBearers']['list'].map(function(person, index){
                             return (<div className="col-xs-6 col-md-3 col-lg-3 col-3" key={index}>
                                 <a className="thumbnail">
-                                    <img src={blankPhoto}></img>
+                                    <img src={memberPhotos[person.photoId]} ></img>
                                     <h4 className="name-middling">{person.name}</h4>
                                     <h5 className="name-middling">{person.title}</h5>
                                 </a>

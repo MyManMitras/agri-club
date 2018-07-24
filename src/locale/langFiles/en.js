@@ -26,18 +26,18 @@ let englishContent = {
         officeBearers: {
             name: 'Office Bearers',
             list: [
-                {name: 'Siddaraju B', title: 'President'},
-                {name: 'Yogesh H M', title: 'Vice-President'},
-                {name: 'Krishna M C', title: 'secretary'},
-                {name: 'Ramesh M N', title: 'Treasurer'},
-                {name: 'Umesh Kumar K', title: 'Director'},
-                {name: 'Krishna M', title: 'Director'},
-                {name: 'Gurubasappa', title: 'Director'},
-                {name: 'Mahesh M R', title: 'Director'},
-                {name: 'Mahalinghaiah M C', title: 'Director'},
-                {name: 'Rakesh S', title: 'Director'},
-                {name: 'Sathish H S', title: 'Director'},
-                {name: 'Sudheer S', title: 'Director'}
+                {name: 'Siddaraju B', title: 'President', photoId: 'm001'},
+                {name: 'Yogesh HM', title: 'Vice-President', photoId: 'm002'},
+                {name: 'Krishna MC', title: 'secretary', photoId: 'm003'},
+                {name: 'Ramesh MN', title: 'Treasurer', photoId: 'm004'},
+                {name: 'Umesh Kumar K', title: 'Director', photoId: 'm005'},
+                {name: 'Krishna M', title: 'Director', photoId: 'm006'},
+                {name: 'Gurubasappa', title: 'Director', photoId: 'm007'},
+                {name: 'Mahesh MR', title: 'Director', photoId: 'm008'},
+                {name: 'Mahalingaiah MC', title: 'Director', photoId: 'm009'},
+                {name: 'Rakesh S', title: 'Director', photoId: 'm0010'},
+                {name: 'Sathish HS', title: 'Director', photoId: 'm0011'},
+                {name: 'Sudheer S', title: 'Director', photoId: 'm0012'}
             ]
         },
         programs: {
@@ -63,6 +63,23 @@ let englishContent = {
                 p3: 'The building in which the Club is presently housed was inaugurated on 20-10-2013. Sri C. Srikanthu was the President of the Club at that juncture. The elegance of the Club Building, the deceptive facilities built-up in the club, the ambiance of the location, are bound to attract many more people to join it.',
                 p4: 'Presently, the members of the Club have elected Sri B. Siddaraju as its President for the years 2017-18.  Sri Siddaraju, is the former President of the City Municipal Council, Mandya.'
             }
+        },
+        members: {
+            name: 'Members',
+            list: [
+                {label: 'Siddaraju B', id: 'm001'},
+                {label: 'Yogesh HM', id: 'm002'},
+                {label: 'Krishna MC', id: 'm003'},
+                {label: 'Ramesh MN', id: 'm004'},
+                {label: 'Umesh Kumar K', id: 'm005'},
+                {label: 'Krishna M', id: 'm006'},
+                {label: 'Gurubasappa', id: 'm007'},
+                {label: 'Mahesh MR', id: 'm008'},
+                {label: 'Mahalingaiah MC', id: 'm009'},
+                {label: 'Rakesh S', id: 'm0010'},
+                {label: 'Sathish HS', id: 'm0011'},
+                {label: 'Sudheer S', id: 'm0012'}
+            ]
         },
         contactUs: {
             name: 'Contact Us'

@@ -69,6 +69,7 @@ class Section extends Component {
                 <div className="row" ref="upcomingEvents"> {self.getLeftSpacing()} <UpcomingEvents/> {self.getRightSpacing()} </div>
                 <div className="row" ref="facilities"> {self.getLeftSpacing()} <Facilities/> {self.getRightSpacing()} </div>
                 <div className="row" ref="gallery"> {self.getLeftSpacing()} <Gallery/> {self.getRightSpacing()} </div>
+                <div className="row" ref="members"> {self.getLeftSpacing()} <Members disableFooter={this.props.disableFooter.bind(this)}/> {self.getRightSpacing()} </div>
                 <div className="row" ref="contactUs"> {self.getLeftSpacing()} <ContactUs/> {self.getRightSpacing()} </div>
             </div>
         );

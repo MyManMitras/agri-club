@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import content from '../../../locale/locale';
 import commons from '../../../utils/commons';
 import main from '../../../assets/main2.JPG';
-import blankPhoto from '../../../assets/blankPhoto.jpg';
+import blankPhoto from '../../../assets/members/RPP.JPG';
 
 class ContactUs extends Component {
     render() {
