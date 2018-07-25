@@ -11,7 +11,6 @@ class ContactUs extends Component {
             <div className="col-8 col-sm-12 col-md-8 col-lg-8 actual-content">
                 <h1>{content['contactUs']}</h1>
                 <div className="row">
-                    <div className="col-md-2 col-lg-2 col-2"></div>
                     <div className="col-xs-12 col-md-3 col-lg-3 col-3">
                         <a className="thumbnail">
                             <img src={blankPhoto}></img>
@@ -27,7 +26,6 @@ class ContactUs extends Component {
                         <h4>Fax: 08232-297050</h4>
                         <h4>eMail: agri-club@sample.com</h4>
                     </div>
-                    <div className="col-md-2 col-lg-2 col-2"></div>
                 </div>
             </div>
         );

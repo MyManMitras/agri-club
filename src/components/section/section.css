@@ -11,13 +11,11 @@
 }
 
 .left-content-space{
-    min-height: 850px !important;
     opacity: 0.5;
     border-right: 1px solid green;
 }
 
 .right-content-space{
-    min-height: 850px !important;
     opacity: 0.5;
     border-left: 1px solid green;
 }
@@ -41,4 +39,7 @@
     background: green;
 }
 
-
+.actual-content {
+    border-left: 1px solid green;
+    border-right: 1px solid green;
+}

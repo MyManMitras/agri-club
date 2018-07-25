@@ -42,6 +42,9 @@ class Members extends Component {
     enableFooter = () => {
         this.props.disableFooter(false);
     };
+    handleSearch = (val) =>{
+        console.log(val);
+    };
     render() {
         const { selectedMember } = this.state;
         return (
@@ -55,6 +58,7 @@ class Members extends Component {
                             onChange={this.handleChange}
                             onFocus={this.disableFooter}
                             onBlur={this.enableFooter}
+                            onInputChange={this.handleSearch}
                             options={content['screens']['members']['list']}
                             placeholder="Type member name or id"
                             className = "search-box"
