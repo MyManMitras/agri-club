@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import content from '../../../locale/locale';
-import commons from '../../../utils/commons';
-import main from '../../../assets/main2.JPG';
 import './members.css';
-import blankPhoto from '../../../assets/members/RPP.JPG';
 import Select from 'react-select';
 import memberPhotos from '../photos/photos';
+import _ from 'lodash';
 
 class Members extends Component {
     state = {
@@ -25,7 +23,7 @@ class Members extends Component {
                         </a>
                     </div>
                     <div className="col-xs-12 col-md-5 col-lg-5 col-5">
-                        <h3>{this.state.selectedMember.label}</h3>
+                        <h3>{this.state.selectedMember.name}</h3>
                         <h4>ID : {this.state.selectedMember.id}</h4>
                     </div>
                 </div>
