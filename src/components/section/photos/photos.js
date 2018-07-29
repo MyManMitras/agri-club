@@ -240,7 +240,6 @@ import SM043 from '../../../assets/members/SM043.jpg';
 import SM044 from '../../../assets/members/SM044.JPG';
 import SM045 from '../../../assets/members/SM045.jpg';
 import SM046 from '../../../assets/members/SM046.JPG';
-import SM047 from '../../../assets/members/SM047.jpg';
 
 import SM049 from '../../../assets/members/SM049.jpg';
 import SM050 from '../../../assets/members/SM050.JPG';
@@ -508,7 +507,7 @@ let memberPhotos = {
     SM044 : SM044,
     SM045 : SM045,
     SM046 : SM046,
-    SM047 : SM047,
+    SM047 : blankPhoto,
     SM048 : blankPhoto,
     SM049 : SM049,
     SM050 : SM050,
