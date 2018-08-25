@@ -30,14 +30,14 @@ let englishContent = {
                 {name: 'Yogesh HM', title: 'Vice-President', photoId: 'M129'},
                 {name: 'Krishna MC', title: 'secretary', photoId: 'M041'},
                 {name: 'Ramesh MN', title: 'Treasurer', photoId: 'M085'},
-                {name: 'Umesh Kumar K', title: 'Director', photoId: 'M164'},
-                {name: 'Krishna M', title: 'Director', photoId: 'M040'},
+                {name: 'Mahalingaiah MC', title: 'Director', photoId: 'M049'},
                 {name: 'Gurubasappa', title: 'Director', photoId: 'M028'},
                 {name: 'Mahesh MR', title: 'Director', photoId: 'M053'},
-                {name: 'Mahalingaiah MC', title: 'Director', photoId: 'M049'},
-                {name: 'Rakesh S', title: 'Director', photoId: 'M083'},
                 {name: 'Sathish HS', title: 'Director', photoId: 'M096'},
-                {name: 'Sudheer S', title: 'Director', photoId: 'M114'}
+                {name: 'Krishna M', title: 'Director', photoId: 'M040'},
+                {name: 'Rakesh S', title: 'Director', photoId: 'M083'},
+                {name: 'Sudheer S', title: 'Director', photoId: 'M114'},
+                {name: 'Umesh Kumar K', title: 'Director', photoId: 'M164'}
             ]
         },
         programs: {
