@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import content from '../../../locale/locale';
 import './members.css';
 import Select from 'react-select';
 import memberPhotos from '../photos/photos';
-import _ from 'lodash';
 
 class Members extends Component {
     state = {
@@ -19,7 +17,7 @@ class Members extends Component {
                 <div className="row">
                     <div className="col-xs-12 col-md-3 col-lg-3 col-3">
                         <a className="thumbnail">
-                            <img src={memberPhotos[this.state.selectedMember.id]}></img>
+                            <img src={memberPhotos[this.state.selectedMember.id]} alt={this.state.selectedMember.name}></img>
                         </a>
                     </div>
                     <div className="col-xs-12 col-md-5 col-lg-5 col-5">

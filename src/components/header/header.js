@@ -28,10 +28,11 @@ class Header extends Component {
                     if(index < 5) {
                         return self.getVisibleNavs(self, screen, index);
                     }
+                    return null;
                 })}
 
                 <li role="presentation" className="dropdown">
-                <a className="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <a className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                     Other <span className="caret"></span>
                 </a>
                     <ul className="dropdown-menu">
@@ -41,6 +42,7 @@ class Header extends Component {
                                     <a href={'#'+screen}>{content[screen]}</a>
                                 </li>);
                             }
+                            return null;
                         })}
                     </ul>
                 </li>
@@ -66,7 +68,7 @@ class Header extends Component {
     }
     getLogForNoMobileDevices() {
         if(!window.isMobile) {
-            return (<img src={logo} className="logo" />);
+            return (<img src={logo} className="logo" alt="Agri club Logo"/>);
         } else {
             return null;
         }

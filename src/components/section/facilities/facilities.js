@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import './facilities.css';
 import content from '../../../locale/locale';
-import commons from '../../../utils/commons';
 import gym from '../../../assets/gym.jpg';
 import room from '../../../assets/rooms.jpg';
 import cards from '../../../assets/cards.jpg';
@@ -21,7 +19,7 @@ class Facilities extends Component {
                 <h1>{content['facilities']}</h1>
                 <div className="row">
                     {content['screens']['facilities']['list'].map(function(item, index){
-                        return (<div className="col-sm-12 col-md-3 col-lg-3 col-3 facility-block">
+                        return (<div className="col-sm-12 col-md-3 col-lg-3 col-3 facility-block" key={index}>
                                     <div className="thumbnail">
                                         <img src={itemImages[item.name]} alt="..." className="facility-block-img"></img>
                                         <div className="caption">

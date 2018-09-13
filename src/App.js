@@ -5,15 +5,17 @@ import Footer from './components/footer/footer';
 import Header from './components/header/header';
 import Section from './components/section/section';
 import _ from 'lodash';
+import ReactDOM from 'react-dom';
 
 const screens = [
-  'home', 'officeBearers', 'programs', 'upcomingEvents', 'facilities', 'gallery', 'members', 'contactUs'
+  'home', 'officeBearers', 'programs', 'facilities', 'gallery', 'members', 'contactUs'
 ];
 class App extends Component {
 
   state = {
     showMobileHeaderList: false,
     selectedScreen: _.head(screens),
+    selectedScreenForHeader: _.head(screens),
     hideFooter: false
   };
   changeLanguage() {
@@ -27,13 +29,24 @@ class App extends Component {
 //    this.forceUpdate();
   }
   handleScroll() {
+    var currentScreenIndex = 0;
+    var self = this;
+    _.forEach(screens, function(screen, index){
+      var section = ReactDOM.findDOMNode(self.refs.section.refs[screen]);
+      if(section.offsetTop <= window.scrollY && window.scrollY <= (section.offsetTop+section.offsetHeight)){
+        currentScreenIndex = index;
+      }
+    });
+    this.setState({
+      selectedScreenForHeader: screens[currentScreenIndex]
+    });
   }
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll.bind(this));
   }
 
   componentWillUnmount(){
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener('scroll', this.handleScroll.bind(this));
   }
 
   componentWillMount() {
@@ -52,6 +65,7 @@ class App extends Component {
   }
   changeScreen(screen) {
 	  this.setState({
+    selectedScreenForHeader: screen,
 		selectedScreen: screen,
 		showMobileHeaderList: !this.state.showMobileHeaderList
 	  });
@@ -72,11 +86,11 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <Header screens={screens} selectedScreen={this.state.selectedScreen} 
+        <Header screens={screens} selectedScreen={this.state.selectedScreenForHeader} 
           changeScreen={this.changeScreen.bind(this)}
           toogleMobileHeader={this.toogleMobileHeader.bind(this)}/>
         <Section screens={screens} changeScreen={this.changeScreen.bind(this)} disableFooter={this.disableFooter.bind(this)}
-		      selectedScreen={this.state.selectedScreen} showHeaders={this.state.showMobileHeaderList}/>
+		      selectedScreen={this.state.selectedScreen} showHeaders={this.state.showMobileHeaderList} ref="section"/>
         {this.getFooter()}
       </div>
     );

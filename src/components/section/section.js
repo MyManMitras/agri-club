@@ -2,13 +2,10 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './section.css';
 import content from '../../locale/locale';
-import commons from '../../utils/commons';
 import Home from './home/home.js';
-import History from './history/history.js';
 import Programs from './programs/programs.js';
 import ContactUs from './contactUs/contactUs.js';
 import Members from './members/members.js';
-import UpcomingEvents from './upcomingEvents/upcomingEvents.js';
 import Gallery from './gallery/gallery.js';
 import Facilities from './facilities/facilities';
 import OfficeBearers from './officeBearers/officeBearers';
@@ -63,14 +60,13 @@ class Section extends Component {
         var self = this;
         return (
             <div>
-                <div className="row" ref="home"> {self.getLeftSpacing()} <Home/> {self.getRightSpacing()} </div>
-                <div className="row" ref="officeBearers"> {self.getLeftSpacing()} <OfficeBearers/> {self.getRightSpacing()} </div>
-                <div className="row" ref="programs"> {self.getLeftSpacing()} <Programs/> {self.getRightSpacing()} </div>
-                <div className="row" ref="upcomingEvents"> {self.getLeftSpacing()} <UpcomingEvents/> {self.getRightSpacing()} </div>
-                <div className="row" ref="facilities"> {self.getLeftSpacing()} <Facilities/> {self.getRightSpacing()} </div>
-                <div className="row" ref="gallery"> {self.getLeftSpacing()} <Gallery/> {self.getRightSpacing()} </div>
-                <div className="row" ref="members"> {self.getLeftSpacing()} <Members disableFooter={this.props.disableFooter.bind(this)}/> {self.getRightSpacing()} </div>
-                <div className="row" ref="contactUs"> {self.getLeftSpacing()} <ContactUs/> {self.getRightSpacing()} </div>
+                <div className="row" ref="home" id="home"> {self.getLeftSpacing()} <Home/> {self.getRightSpacing()} </div>
+                <div className="row" ref="officeBearers" id="officeBearers"> {self.getLeftSpacing()} <OfficeBearers/> {self.getRightSpacing()} </div>
+                <div className="row" ref="programs" id="programs"> {self.getLeftSpacing()} <Programs/> {self.getRightSpacing()} </div>
+                <div className="row" ref="facilities" id="facilities"> {self.getLeftSpacing()} <Facilities/> {self.getRightSpacing()} </div>
+                <div className="row" ref="gallery" id="gallery"> {self.getLeftSpacing()} <Gallery/> {self.getRightSpacing()} </div>
+                <div className="row" ref="members" id="members"> {self.getLeftSpacing()} <Members disableFooter={this.props.disableFooter.bind(this)}/> {self.getRightSpacing()} </div>
+                <div className="row" ref="contactUs" id="contactUs"> {self.getLeftSpacing()} <ContactUs/> {self.getRightSpacing()} </div>
             </div>
         );
     }

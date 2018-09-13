@@ -15,8 +15,18 @@
 .event {
     text-align: center;
     padding: 15px;
-    border-right: 1px dotted white;
-    border-left: 1px dotted white;
+    
+}
+
+@keyframes green-fade {
+    0% {background: rgb(173, 235, 173);}
+    100% {background: none;}
+}
+
+.event {
+   animation-name: green-fade;
+   animation-duration: 2s;
+   animation-timing-function: linear;
 }
 
 .mobile .event {

@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import content from '../../../locale/locale';
-import commons from '../../../utils/commons';
 import main from '../../../assets/main2.JPG';
-import img0 from '../../../assets/000.JPG';
 import img10 from '../../../assets/010.jpg';
-import img2 from '../../../assets/002.jpg';
-import img3 from '../../../assets/003.jpg';
 import img4 from '../../../assets/004.jpg';
 import img5 from '../../../assets/005.JPG';
 import img6 from '../../../assets/006.JPG';
@@ -101,7 +96,7 @@ class Gallery extends Component {
         return (
             <div className="col-8 col-sm-12 col-md-8 col-lg-8 actual-content">
                 <h1>{content['gallery']}</h1>
-                <ImageGallery items={images} />
+                <ImageGallery items={images} showFullscreenButton={false} />
                 <hr></hr>
             </div>
         );

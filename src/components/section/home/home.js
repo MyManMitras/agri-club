@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import './home.css';
 import content from '../../../locale/locale';
-import commons from '../../../utils/commons';
 import main from '../../../assets/main2.JPG';
 
 class Home extends Component {

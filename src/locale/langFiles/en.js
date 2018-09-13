@@ -326,25 +326,25 @@ let englishContent = {
     },
     notifications: [
         {
-            title: 'A Sample Event Name 1',
-            date: '14th Jan 2017',
-            highlight: 'CM addresed the gathering'
+            title: 'Roof Garden Opening',
+            date: '16th Sep 2018 9:30AM onwards',
+            highlight: 'Inaguration address by Mr K.Yalakki Gowda'
         },{
-            title: 'A Sample Event Name 2',
-            date: '01st Feb 2017',
-            highlight: 'CM addresed the gathering'
+            title: 'Agri Club Website Launch',
+            date: '16th Sep 2018',
+            highlight: 'Website launch by the cheif guest Mr K.Yalakki Gowda'
         },{
-            title: 'A Sample Event Name 3',
-            date: '25th Feb 2017',
-            highlight: 'CM addresed the gathering'
+            title: 'Rummy Tournament',
+            date: '16th Sep 2018',
+            highlight: 'A Playing card tournament for the Club members'
         },{
-            title: 'A Sample Event Name 4',
-            date: '20th Mar 2017',
-            highlight: 'CM addresed the gathering'
+            title: 'Club Sports Day',
+            date: '23rd Sep 2018',
+            highlight: 'Yearly Sports day for the club members and their family'
         },{
-            title: 'A Sample Event Name 5',
-            date: '14th Apr 2017',
-            highlight: 'CM addresed the gathering'
+            title: 'Kannada Rajyothsava Celebration',
+            date: '1st Nov 2018',
+            highlight: 'A day to celebrate the formation of one state for Kannadigas'
         }
     ]
 
