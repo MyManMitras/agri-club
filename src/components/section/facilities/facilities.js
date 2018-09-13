@@ -10,26 +10,44 @@ const itemImages = {
     'Gym': gym,
     'Rooms' : room,
     'Cards': cards,
-    'Part Hall': hall
+    'Party Hall': hall
 };
 class Facilities extends Component {
+
+    getBullets(item) {
+        if(item.notes){
+            return (<ul>
+                {item.notes.map(function(note, index){
+                    return (<li key={index}>{note}</li>);
+                })}
+            </ul>)
+        }else{
+            return null;
+        } 
+
+    }
     render() {
+        var self = this;
         return (
             <div className="col-8 col-sm-12 col-md-8 col-lg-8 actual-content">
                 <h1>{content['facilities']}</h1>
-                <div className="row">
                     {content['screens']['facilities']['list'].map(function(item, index){
-                        return (<div className="col-sm-12 col-md-3 col-lg-3 col-3 facility-block" key={index}>
-                                    <div className="thumbnail">
-                                        <img src={itemImages[item.name]} alt="..." className="facility-block-img"></img>
-                                        <div className="caption">
-                                            <h3>{item.name}</h3>
-                                            <p>{item.text}</p>
-                                        </div>
+                        return (
+                        <div className="row" key={index}>    
+                            <div className="col-sm-12 col-md-4 col-lg-4 col-4 facility-block" >
+                                <div className="thumbnail">
+                                    <img src={itemImages[item.name]} alt="..." className="facility-block-img"></img>
+                                    <div className="caption">
+                                        <h3>{item.name}</h3>
                                     </div>
-                            </div>)
+                                </div>
+                            </div>
+                            <div className="col-sm-12 col-md-8 col-lg-8 col-8">
+                                <p>{item.text}</p>
+                                {self.getBullets(item)}
+                            </div>
+                        </div>)
                     })}
-            </div>
                 <hr></hr>
             </div>
         );

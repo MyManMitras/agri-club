@@ -83,9 +83,18 @@ class App extends Component {
       return null;
     }
   };
+
+  getAppClassName() {
+    var className = "app"
+    if(!window.isMobile) {
+      className += " desktop-app"
+    }
+
+    return className;
+  };
   render() {
     return (
-      <div className="app">
+      <div className={this.getAppClassName()}>
         <Header screens={screens} selectedScreen={this.state.selectedScreenForHeader} 
           changeScreen={this.changeScreen.bind(this)}
           toogleMobileHeader={this.toogleMobileHeader.bind(this)}/>

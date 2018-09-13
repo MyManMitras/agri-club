@@ -46,10 +46,20 @@ let englishContent = {
         facilities: {
             name: 'Facilities',
             list: [
-                {name: 'Gym', text: 'Some content about the facility'},
-                {name: 'Rooms', text: 'Some content about the facility'},
-                {name: 'Cards', text: 'Some content about the facility'},
-                {name: 'Part Hall', text: 'Some content about the facility'},
+                {name: 'Gym', text: 'The Club includes Gym facility with a thought that the fitness of the club is the fitness of the club members. Gym has all the basic necessary exercise equipments. It is been functional and been used by most of the club members regularly',
+                    notes: ["Open Timings: 5:30AM to 9:30AM and 4:30PM to 7:30PM",
+                            "Members has to be in sports etiquette to utilize gym facilities",
+                            "Gym includes first aid kit for any emergency situations"]},
+                {name: 'Rooms', text: 'The Club includes rooms with top standard facilities like Air Conditioner, Telivision, Sofa etc. These rooms are meant for club members and the guests who visit the club.',
+                    notes: ["Club has AC and Non AC rooms",
+                            "Rooms can be booked in advance by connecting to manager",
+                            "Food facilities are also provided to the room"]},
+                {name: 'Cards', text: 'The club members can enjoy or refresh their busy work schedules by playing cards in the club. Club includes all the necessary facilities for a playing cards environment.',
+                    notes: ["Open Timings: 5:30PM to 10:30PM","Food facilities are available to the card table",
+                    "Oftenly card tournaments are organised by the club"]},
+                {name: 'Party Hall', text: 'The Club includes a small party hall space which can accommodate 100-150 persons for celebrations like Birthday, Naming Ceromany, Engagement etc.',
+                    notes: ["Hall can be booked in advance by connecting to manager",
+                            "Club includes a big parking facility for decent number of vehicles"]},
             ]
         },
         upcomingEvents: {
