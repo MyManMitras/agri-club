@@ -29,6 +29,9 @@ class App extends Component {
 //    this.forceUpdate();
   }
   handleScroll() {
+    if(this.state.showMobileHeaderList) {
+      this.toogleMobileHeader();
+    }
     var currentScreenIndex = 0;
     var self = this;
     _.forEach(screens, function(screen, index){
