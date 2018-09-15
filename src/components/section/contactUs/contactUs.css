@@ -2,3 +2,7 @@
     position:  relative !important;
     display: block;
 }
+
+.powered-by {
+    float: right;
+}

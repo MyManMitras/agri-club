@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './section.css';
+import "@babel/polyfill";
 import content from '../../locale/locale';
 import Home from './home/home.js';
 import Programs from './programs/programs.js';

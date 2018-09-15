@@ -21,6 +21,7 @@
 
 .corp-name {
     display: inline-grid;
+    display: -ms-inline-grid;
     margin: 0 5px 0 5px;
     color:  green;
 }
@@ -33,6 +34,7 @@
 
 .agri-navs {
     display: inline-grid;
+    display: -ms-inline-grid;
 }
 
 .agri-navs ul li a{

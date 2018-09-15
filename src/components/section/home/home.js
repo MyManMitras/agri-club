@@ -10,10 +10,10 @@ class Home extends Component {
                 <h1>{content['home']}</h1>
                 <img src={main} alt="The club front" height='350px' className="front-image"></img>
                 <br/><br/>
-                <p>{content.screens.home.text.p1}</p>
-                <p>{content.screens.home.text.p2}</p>
-                <p>{content.screens.home.text.p3}</p>
-                <p>{content.screens.home.text.p4}</p>
+                <p>{'\u00A0 \u00A0 \u00A0 \u00A0'}{content.screens.home.text.p1}</p>
+                <p>{'\u00A0 \u00A0 \u00A0 \u00A0'}{content.screens.home.text.p2}</p>
+                <p>{'\u00A0 \u00A0 \u00A0 \u00A0'}{content.screens.home.text.p3}</p>
+                <p>{'\u00A0 \u00A0 \u00A0 \u00A0'}{content.screens.home.text.p4}</p>
                 <hr></hr>
             </div>
         );

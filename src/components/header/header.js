@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './header.css';
+import "@babel/polyfill";
 import content from '../../locale/locale';
 import logo from '../../assets/logoK.png';
 import commons from '../../utils/commons';

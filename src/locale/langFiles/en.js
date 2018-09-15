@@ -7,7 +7,7 @@ let englishContent = {
     facilities: 'Facilities',
     members: 'Members',
     history: 'History',
-    officeBearers: 'Office Bearers',
+    officeBearers: 'Working Committee',
     programs: 'Programs', 
     upcomingEvents: 'Upcoming Events',
     gallery: 'Gallery',
@@ -24,7 +24,7 @@ let englishContent = {
             }
         },
         officeBearers: {
-            name: 'Office Bearers',
+            name: 'Club Working Committee',
             list: [
                 {name: 'Siddaraju B', title: 'President', photoId: 'M107'},
                 {name: 'Yogesh HM', title: 'Vice-President', photoId: 'M129'},
@@ -50,14 +50,14 @@ let englishContent = {
                     notes: ["Open Timings: 5:30AM to 9:30AM and 4:30PM to 7:30PM",
                             "Members has to be in sports etiquette to utilize gym facilities",
                             "Gym includes first aid kit for any emergency situations"]},
-                {name: 'Rooms', text: 'The Club includes rooms with top standard facilities like Air Conditioner, Telivision, Sofa etc. These rooms are meant for club members and the guests who visit the club.',
+                {name: 'Rooms', text: 'The Club includes rooms with top standard facilities like Air Conditioner, Television, Sofa etc. These rooms are meant for club members and the guests who visit the club.',
                     notes: ["Club has AC and Non AC rooms",
                             "Rooms can be booked in advance by connecting to manager",
                             "Food facilities are also provided to the room"]},
                 {name: 'Cards', text: 'The club members can enjoy or refresh their busy work schedules by playing cards in the club. Club includes all the necessary facilities for a playing cards environment.',
-                    notes: ["Open Timings: 5:30PM to 10:30PM","Food facilities are available to the card table",
-                    "Oftenly card tournaments are organised by the club"]},
-                {name: 'Party Hall', text: 'The Club includes a small party hall space which can accommodate 100-150 persons for celebrations like Birthday, Naming Ceromany, Engagement etc.',
+                    notes: ["Cards section includes 10 tables and each can accommodate 8 persons","Food facilities are available to the card table",
+                    "Often card tournaments are organised by the club"]},
+                {name: 'Party Hall', text: 'The Club includes a small party hall space which can accommodate 100-150 persons for celebrations like Birthday, Naming Ceremony, Engagement etc.',
                     notes: ["Hall can be booked in advance by connecting to manager",
                             "Club includes a big parking facility for decent number of vehicles"]},
             ]

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './footer.css';
+import "@babel/polyfill";
 import content from '../../locale/locale';
 import commons from '../../utils/commons';
 

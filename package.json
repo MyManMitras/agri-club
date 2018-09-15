@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/polyfill": "^7.0.0",
     "bootstrap": "3.3.7",
     "jquery": "^3.2.1",
     "lodash": "^4.17.4",
@@ -11,7 +12,7 @@
     "react-dom": "^15.6.1",
     "react-iframe": "^1.2.0",
     "react-image-gallery": "^0.8.7",
-    "react-localization": "^0.1.2",
+    "react-localization": "1.0.10",
     "react-scroll": "^1.5.4",
     "react-select": "^2.0.0"
   },
