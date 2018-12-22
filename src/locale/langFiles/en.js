@@ -26,18 +26,20 @@ let englishContent = {
         officeBearers: {
             name: 'Club Working Committee',
             list: [
-                {name: 'Siddaraju B', title: 'President', photoId: 'M107'},
+                {name: 'Chandregowda TS', title: 'President', photoId: 'M159'},
                 {name: 'Yogesh HM', title: 'Vice-President', photoId: 'M129'},
                 {name: 'Krishna MC', title: 'secretary', photoId: 'M041'},
-                {name: 'Ramesh MN', title: 'Treasurer', photoId: 'M085'},
+                {name: 'Somesh N', title: 'Treasurer', photoId: 'M109'},
                 {name: 'Mahalingaiah MC', title: 'Director', photoId: 'M049'},
                 {name: 'Gurubasappa', title: 'Director', photoId: 'M028'},
                 {name: 'Mahesh MR', title: 'Director', photoId: 'M053'},
                 {name: 'Sathish HS', title: 'Director', photoId: 'M096'},
                 {name: 'Krishna M', title: 'Director', photoId: 'M040'},
                 {name: 'Rakesh S', title: 'Director', photoId: 'M083'},
-                {name: 'Sudheer S', title: 'Director', photoId: 'M114'},
-                {name: 'Umesh Kumar K', title: 'Director', photoId: 'M164'}
+                //{name: 'Sudheer S', title: 'Director', photoId: 'M114'},
+                {name: 'Umesh Kumar K', title: 'Director', photoId: 'M164'},
+                {name: 'Ashok Kumar DL', title: 'Director', photoId: 'M167'},
+                {name: 'Thimmegowda DH', title: 'Director', photoId: 'M163'}
             ]
         },
         programs: {
